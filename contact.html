@@ -10,6 +10,9 @@
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/contact.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+
+
+
 </head>
 <body>
 
@@ -23,10 +26,10 @@
 			<nav class="main_nav">
 				<ul>
 					<li><a href="index.html">home</a></li>
-					<li><a href="categories.html">clothes</a></li>
-					<li><a href="categories.html">accessories</a></li>
-					<li><a href="categories.html">lingerie</a></li>
-					<li><a href="contact.html">contact</a></li>
+					<li><a href="monos.html">monos</a></li>
+					<li><a href="tutrabajo.html">busca tu trabajo</a></li>
+					
+					<li><a href="contact.html">contacto</a></li>
 				</ul>
 			</nav>
 			<div class="header_content ml-auto">
@@ -86,10 +89,10 @@
 		<nav class="menu_nav">
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="index.html">home</a></li>
-				<li class="menu_mm"><a href="#">clothes</a></li>
-				<li class="menu_mm"><a href="#">accessories</a></li>
-				<li class="menu_mm"><a href="#">lingerie</a></li>
-				<li class="menu_mm"><a href="#">contact</a></li>
+				<li class="menu_mm"><a href="monos.html">monos</a></li>
+				<li class="menu_mm"><a href="tutrabajo.html">busca tu trabajo</a></li>
+				<li class="menu_mm"><a href=""></a></li>
+				<li class="menu_mm"><a href="contact.html">contacto</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -126,6 +129,7 @@
 			</div>
 		</div>
 	</div>
+
 	
 	<!-- Contact Form -->
 
@@ -134,16 +138,16 @@
 			<div class="row">
 				<div class="col">
 					<div class="review_form_container">
-						<div class="review_form_title">get in touch</div>
+						<div class="review_form_title">contáctanos</div>
 						<div class="review_form_content">
-							<form action="#" id="review_form" class="review_form">
+							<form  id="contact_form" class="review_form">
 								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
-									<input type="text" class="review_form_input" placeholder="Name" required="required">
-									<input type="email" class="review_form_input" placeholder="E-mail" required="required">
-									<input type="text" class="review_form_input" placeholder="Subject">
+									<input id="nombre" name="name" type="text" class="review_form_input" placeholder="Nombre" required="required">
+									<input name="email" type="email" class="review_form_input" placeholder="Correo electrónico" required="required">
+									<input name="subject" type="text" class="review_form_input" placeholder="Asunto">
 								</div>
-								<textarea class="review_form_text" name="review_form_text" placeholder="Message"></textarea>
-								<button type="submit" class="review_form_button">send message</button>
+								<textarea name="message" class="review_form_text" name="review_form_text" placeholder="Mensaje"></textarea>
+								<button type="submit" class="review_form_button">Enviar mensaje</button>
 							</form>
 						</div>
 					</div>
@@ -205,6 +209,7 @@
 									<div class="accordion_panel">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis quam ipsum. Pellentesque consequat tellus non tortor tempus, id egestas elit iaculis. Proin eu dui porta, pretium metus vitae, pharetra odio. Sed ac mi commodo, pellentesque erat eget, accumsan justo.</p>
 									</div>
+									<button onclick="llevar()">Llevar</button>
 								</div>
 
 								<div class="accordion_container">
@@ -230,35 +235,7 @@
 		</div>
 	</div>
 
-	<!-- Newsletter -->
-
-	<div class="newsletter">
-		<div class="newsletter_content">
-			<div class="newsletter_image" style="background-image:url(images/newsletter.jpg)"></div>
-			<div class="container">
-				<div class="row newsletter_row">
-					<div class="col">
-						<div class="section_title_container text-center">
-							<div class="section_subtitle">only the best</div>
-							<div class="section_title">subscribe for a 20% discount</div>
-						</div>
-					</div>
-				</div>
-				<div class="row newsletter_container">
-					<div class="col-lg-10 offset-lg-1">
-						<div class="newsletter_form_container">
-							<form action="#">
-								<input type="email" class="newsletter_input" required="required" placeholder="E-mail here">
-								<button type="submit" class="newsletter_button">subscribe</button>
-							</form>
-						</div>
-						<div class="newsletter_text">Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra nec. Fusce vel lorem libero. Integer ex mi, facilisis sed nisi ut, vestib ulum ultrices nulla. Aliquam egestas tempor leo.</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	
 	<!-- Footer -->
 
 	<footer class="footer">
@@ -292,7 +269,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</footer>
 </div>
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-firestore.js"></script>
+<script>
+  // Initialize Firebase
 
+  var config = {
+    apiKey: "AIzaSyBYq1bsOkt5ZT8Q0XKF6kcwaUBQK8_iyQk",
+    authDomain: "empire-of-innovation.firebaseapp.com",
+    databaseURL: "https://empire-of-innovation.firebaseio.com",
+    projectId: "empire-of-innovation",
+    storageBucket: "empire-of-innovation.appspot.com",
+    messagingSenderId: "1024714964386"
+  };
+  firebase.initializeApp(config);
+
+  const db = firebase.firestore();
+  
+</script>
+<script src="app/contact.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
