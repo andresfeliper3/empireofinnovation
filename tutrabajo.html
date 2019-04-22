@@ -154,101 +154,80 @@
 
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="section_title_container text-center">
+						<div class="section_title_container ">
 							
-							<div class="section_title">buscamos modelos</div>
+							<div class="section_title text-center">buscamos modelos</div>
 						</div>
 					</div>
 				</div>		
 				<!-- Product Image -->
-				<div class="container text-center">
-					<div class="col-lg-5" style="display:inline-block">	
-						
-						<div class="product_image">
-							<div class="product_image_large"><img src="img/models2.jpeg" alt="Modelos"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4" style="display:inline-block">	
 							
-						</div>
-					</div>
-
-					<!-- Product Content -->
-					<div class="col-lg-4 text-center"  style="display:inline-block">
-						<div class="product_content">
-							<div class="product_name">2 Piece Swimsuit</div>
-							<div class="product_price">$35.00</div>
-
-							<!-- Product Size -->
-							<div class="product_size_container">
+							<div class="product_image">
+								<div class="product_image_large"><img src="img/models2.jpeg" alt="Modelos"></div>
 								
-								<a href="#form1" data-toggle="collapse"><button type="button" class="button cart-button" >Ver más</button></a>
 							</div>
 						</div>
-					</div>
+
+						<!-- Product Content -->
+						<div id="models_div" class="col-lg-7 text-center"  style="display:inline-block">
+							<div class="product_content">
+								<div class="product_name">
+									<p>
+										¿Te gusta el modelaje? ¿Tu sueño es ser modelo/a?
+								  	</p>
+								  	<p>
+								  		Llena tus datos personales y envíanos una muestra, podrías ser el próximo modelo de Monos.
+								  	</p>
+								</div>
+								<div class="product_price">Aplica</div>
+
+								<!-- Product Size -->
+								<div class="product_size_container">
+									
+									<a  onclick="hacerclick()" ><button type="button" class="button cart-button" >Click aquí</button></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- -->
+						<div id="form1" class="col-lg-7 col-sm-12" style="display:none">
+							<div class="row">
+								<div class="col-lg-11 col-sm-10"></div>
+								<div class="col-lg-1 col-sm-12">
+									<button onclick="atras()" id="backbutton" href="#" class="btn btn-primary btn-sm">
+						          <span class="glyphicon glyphicon-arrow-left">Atrás</span> 
+						        	</button>
+						        </div>
+							</div>
+							
+							<form>
+							  <div class="form-group">
+							    <label for="exampleInputName">Nombre completo</label>
+							    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre completo">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Correo electrónico</label>
+							    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+							    <small id="emailHelp" class="form-text text-muted"></small>
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputPhoto">Foto</label>
+							    <input type="file" class="form-control" id="exampleInputPhoto" placeholder="Fotos">
+							  </div>
+							  <div class="form-check">
+							    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+							    <label class="form-check-label" for="exampleCheck1">Acepto los términos</label>
+							  </div>
+							  <button type="submit" class="btn btn-primary">Enviar</button>
+							</form>
+						</div>  
+					</div>               
 				</div> 
-				<br>
-				<div id="form1" class="row product_row collapse">
-					<form>					 
-						  <div class="form-group row text-center">
-						  	<div class="col-lg-1"></div>
-						    <label for="inputName" class="col-sm-2 col-lg-1">Nombre completo:</label>
-						    <div class="col-lg-10">
-						      <input type="text" class="form-control" id="inputName" placeholder="Nombre completo">
-						    </div>
-						  </div>
-						  <div class="form-group row text-center">
-						    <label for="inputEmail" class="col-sm-2 col-form-label">Correo electrónico:</label>
-						    <div class="col-sm-10">
-						      <input type="email" class="form-control" id="inputEmail" placeholder="Correo electrónico">
-						    </div>
-						  </div>
-						  <div class="form-group row text-center">
-						    <label for="inputMessage" class="col-sm-2 col-form-label">Escribir un mensaje:</label>
-						    <div class="col-sm-10">
-						      <textarea type="text" class="form-control" id="inputMessage" placeholder="Escribe un mensaje (opcional)"></textarea>
-						    </div>
-						  </div>
-						  <fieldset class="form-group">
-						    <div class="row">
-						      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-						      <div class="col-sm-10">
-						        <div class="form-check">
-						          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-						          <label class="form-check-label" for="gridRadios1">
-						            First radio
-						          </label>
-						        </div>
-						        <div class="form-check">
-						          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-						          <label class="form-check-label" for="gridRadios2">
-						            Second radio
-						          </label>
-						        </div>
-						        <div class="form-check disabled">
-						          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-						          <label class="form-check-label" for="gridRadios3">
-						            Third disabled radio
-						          </label>
-						        </div>
-						      </div>
-						    </div>
-						  </fieldset>
-						  <div class="form-group row">
-						    <div class="col-sm-2">Checkbox</div>
-						    <div class="col-sm-10">
-						      <div class="form-check">
-						        <input class="form-check-input" type="checkbox" id="gridCheck1">
-						        <label class="form-check-label" for="gridCheck1">
-						          Example checkbox
-						        </label>
-						      </div>
-						    </div>
-						  </div>
-						  <div class="form-group row">
-						    <div class="col-sm-10">
-						      <button type="submit" class="btn btn-primary">Enviar</button>
-						    </div>
-						  </div>
-						</form> 
-					</div>                                  
+				
+				                 
 				<hr size="30">
 				<div class="row">
 					<div class="col-lg-12">
@@ -336,5 +315,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/malihu-custom-scrollbar/jquery.mCustomScrollbar.js"></script>
 <script src="plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 <script src="js/categories_custom.js"></script>
+<script src="app/tutrabajo.js"></script>
 </body>
 </html>
