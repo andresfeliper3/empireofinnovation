@@ -2,6 +2,7 @@
 
 contact.addEventListener('submit',(e) => {
 	e.preventDefault();
+    alert("Enviado")
 	db.collection("contacto").add({
     nombre: contact.name.value,
     email: contact.email.value,
