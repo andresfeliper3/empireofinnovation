@@ -340,6 +340,10 @@ section
 	font-size: 30px;
 	color: #2f2f2f;
 }
+.logo img {
+	height: 100px;
+	width: auto;
+}
 
 /*********************************
 3.2 Header - Main Navigation
