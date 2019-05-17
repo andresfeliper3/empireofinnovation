@@ -215,14 +215,16 @@
 							  </div>
 							  <div class="form-group">
 							    <label for="exampleInputPhoto">Foto</label>
-							    <input type="file" class="form-control" id="exampleInputPhoto" placeholder="Fotos" multiple>
+							    <input type="file" class="form-control" id="InputPhoto" placeholder="Fotos" multiple>
 							  </div>
 							  <div class="form-check">
 							    <input type="checkbox" class="form-check-input" id="exampleCheck1">
 							    <label class="form-check-label" for="exampleCheck1">Acepto los términos</label>
 							  </div>
-							  <button id="form1_submit"type="submit" class="btn btn-primary">Enviar</button>
+
+							  <button id="form1_submit"type="submit" class="btn btn-primary"  >Enviar</button>
 							</form>
+							<button type="submit" class="btn btn-primary"  onclick="send()">Enviar foto</button>
 						</div>  
 					</div>               
 				</div> 
@@ -298,7 +300,7 @@
 							    <input type="checkbox" class="form-check-input" id="exampleCheck2">
 							    <label class="form-check-label" for="exampleCheck2">Acepto los términos</label>
 							  </div>
-							  <button id="form2_submit"type="submit" class="btn btn-primary">Enviar</button>
+							  <button id="form2_submit"type="submit" class="btn btn-primary" onclick="modelsPic()">Enviar</button>
 							</form>
 						</div>  
 					</div>               
@@ -383,6 +385,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-storage.js"></script>
 <script>
   // Initialize Firebase
 
