@@ -79,31 +79,72 @@ formulario1.addEventListener('submit',(e) => {
   }
   function uploadImageAsPromise (imageFile) {
     
-    return new Promise(function (resolve, reject) {
+    
       //Upload file
       
         console.log(userEmail)
         var modelsRef = storage.ref('BuscamosModelos/'+userEmail+'/'+imageFile.name);
         var task = modelsRef.put(imageFile);
-    });
+   
 
   };
-        /*URGENTE poner el orden de los botones así:
-          Enviar
-          Enviar foto
-          Seleccionar
-          Enviar todo y recargar
-
-        */
-      
+        
 
  /*Firebase: formulario crea tu diseño */
 
  formulario2.addEventListener('submit',(e) => {
 	e.preventDefault();
-	db.collection("monos_diseños").add({
+	var docRef = db.collection("monos_diseños").add({
     nombre: formulario2.name.value,
     email: formulario2.email.value
 	})
+  .then(function(docRef) {
+    key2 = docRef.id
+    console.log("Document written with ID: ", key2);
+    
+})
+  .catch(function(error) {
+    console.error("Error adding document: ", error);
+});
 });
 
+// Recargar página al oprimir botón de "Enviar todo"
+function reload() {
+  location.reload();
+}
+
+var InputPhoto2 = document.getElementById('InputPhoto2');
+
+  InputPhoto2.addEventListener('change', function(e) {
+     
+      //Get files
+     for (var i = 0; i < e.target.files.length; i++) {
+        var imageFile = e.target.files[i];
+         uploadImageAsPromise2(imageFile); //Function uploads every single file
+        
+      }
+  });
+  function send2() {
+    db.collection("monos_diseños").doc(key2).get().then(function(doc) {
+    if (doc.exists) {
+        console.log("Document data:", doc.data().email);
+        userEmail2 = doc.data().email;
+    } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+    }
+}).catch(function(error) {
+    console.log("Error getting document:", error);
+});
+  }
+  function uploadImageAsPromise2 (imageFile) {
+    
+   
+      //Upload file
+      
+        console.log(userEmail2)
+        var designsRef = storage.ref('CreaTuDiseño/'+userEmail2+'/'+imageFile.name);
+        var task = designsRef.put(imageFile);
+   
+
+  };

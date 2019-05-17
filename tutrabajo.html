@@ -24,50 +24,12 @@
 			<div class="logo"><a href="#">Wish</a></div>
 			<nav class="main_nav">
 				<ul>
-					<li><a href="index.html">home</a></li>
+					<li><a href="index.html">inicio</a></li>
 					<li><a href="monos.html">monos</a></li>
-					<li><a href="tutrabajo.html">busca tu trabajo</a></li>                              					<li><a href="contact.html">contact</a></li>
+					<li><a href="tutrabajo.html">tu trabajo</a></li>                              					<li><a href="contact.html">contacto</a></li>
 				</ul>
 			</nav>
-			<div class="header_content ml-auto">
-				<div class="search header_search">
-					<form action="#">
-						<input type="search" class="search_input" required="required">
-						<button type="submit" id="search_button" class="search_button"><img src="images/magnifying-glass.svg" alt=""></button>
-					</form>
-				</div>
-				<div class="shopping">
-					<!-- Cart -->
-					<a href="#">
-						<div class="cart">
-							<img src="images/shopping-bag.svg" alt="">
-							<div class="cart_num_container">
-								<div class="cart_num_inner">
-									<div class="cart_num">1</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<!-- Star -->
-					<a href="#">
-						<div class="star">
-							<img src="images/star.svg" alt="">
-							<div class="star_num_container">
-								<div class="star_num_inner">
-									<div class="star_num">0</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<!-- Avatar -->
-					<a href="#">
-						<div class="avatar">
-							<img src="images/avatar.svg" alt="">
-						</div>
-					</a>
-				</div>
-			</div>
-
+			
 			<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm"><div></div><div></div><div></div></div>
 		</div>
 	</header>
@@ -97,18 +59,18 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/categories.jpg" data-speed="0.8"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="img/buildings.jpg" data-speed="0.8"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="home_container">
 						<div class="home_content">
-							<div class="home_title">Woman</div>
+							<div class="home_title"></div>
 							<div class="breadcrumbs">
 								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li>Woman</li>
-									<li>Accessories</li>
+									<li><a href="index.html"></a></li>
+									<li></li>
+									
 								</ul>
 							</div>
 						</div>
@@ -124,13 +86,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h1>Empresas</h1>
+					<div class="section_title_container text-center"></div>
+					<h1 class="section_title text-center">Empresas</h1>
 					<hr size=30>
-					<h3 class="lead">Encuentra tu trabajo en las siguientes opciones</h3>
+					<h3 class="lead text-center">Encuentra tu trabajo en las siguientes opciones</h3>
 					<!-- Empresas -->
 						<!-- Best Sellers -->	
 						<br><br>
-						<div class="content border border-secondary col-lg-12">
+						<div class="content col-lg-12" id="monos_box">
 							<br>
 								<ul>
 									<!-- Best Seller Item -->
@@ -150,17 +113,22 @@
 
 					<hr size="30">
 				</div>
+				<br>
 			<div id="OfertasMonos" class="row product_row collapse">
 
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section_title_container ">
 							
-							<div class="section_title text-center">buscamos modelos</div>
+							<div class="text-center"><h1 class="titles">Buscamos modelos</h1></div>
 						</div>
 					</div>
 				</div>		
+				<br>
+				<br>
+
 				<!-- Buscamos modelos -->
+			<div class="promo">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-4" style="display:inline-block">	
@@ -172,22 +140,25 @@
 						</div>
 
 						<!-- Caja de texto -->
-						<div id="models_div" class="col-lg-7 text-center"  style="display:inline-block">
+						<div class="row">
+					<div class="col-12"></div></div>
+						<div id="models_div" class="col-lg-4 text-center"  style="display:inline-block">
 							<div class="product_content">
-								<div class="product_name">
-									<p>
-										¿Te gusta el modelaje? ¿Tu sueño es ser modelo/a?
+								<div class="product_name promo_col text-center">
+									<p class="text-center">
+										¿Te gusta el modelaje? ¿Tu sueño es ser modelo/a? Esta es tu oportunidad de demostrar lo que puedes hacer. ¡Anímate a modelar para Monos!
 								  	</p>
-								  	<p>
-								  		Llena tus datos personales y envíanos una muestra, podrías ser el próximo modelo de Monos.
+								  	<p class="text-center">
+								  		Solamente debes llenar el siguiente formulario con tus datos personales y subir tus fotos modelando para ver tu potencial. Después de guardar los datos y subir las fotos, da click en "Enviar todo". ¡Podrías ser el próximo modelo de Monos!
 								  	</p>
 								</div>
 								<div class="product_price">Aplica</div>
+								<br>
 
 								<!-- Product Size -->
 								<div class="product_size_container">
 									
-									<a  onclick="hacerclick()" ><button type="button" class="button cart-button" >Click aquí</button></a>
+									<a  onclick="hacerclick()" ><button type="button" class="btn btn-primary" >Click aquí</button></a>
 								</div>
 							</div>
 						</div>
@@ -198,7 +169,7 @@
 								<div class="col-lg-11 col-sm-10"></div>
 								<div class="col-lg-1 col-sm-12">
 									<button onclick="atras()" id="backbutton" href="#" class="btn btn-primary btn-sm">
-						          <span class="glyphicon glyphicon-arrow-left">Atrás</span> 
+						          <span class="glyphicon glyphicon-arrow-left">Volver</span> 
 						        	</button>
 						        </div>
 							</div>
@@ -213,32 +184,41 @@
 							    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
 							    <small id="emailHelp" class="form-text text-muted"></small>
 							  </div>
-							  <div class="form-group">
-							    <label for="exampleInputPhoto">Foto</label>
-							    <input type="file" class="form-control" id="InputPhoto" placeholder="Fotos" multiple>
-							  </div>
+							  <button id="form1_submit"type="submit" class="btn btn-primary"  >Guardar datos</button>
+							  <br><br>
+							 <!-- 
 							  <div class="form-check">
 							    <input type="checkbox" class="form-check-input" id="exampleCheck1">
 							    <label class="form-check-label" for="exampleCheck1">Acepto los términos</label>
+							  </div>-->
+							  <button type="submit" class="btn btn-primary"  onclick="send()" data-toggle="collapse" data-target="#collapseFotos1">Agregar fotos</button>
+							<br><br>
+							  <div class="form-group collapse" id="collapseFotos1">
+							    <label for="exampleInputPhoto">Fotos</label>
+							    <input type="file" class="form-control" id="InputPhoto" placeholder="Fotos" multiple>
+							    <button id="sendAll" type="submit" class="btn btn-primary" onclick="reload()"> Enviar todo</button>
 							  </div>
-
-							  <button id="form1_submit"type="submit" class="btn btn-primary"  >Enviar</button>
 							</form>
-							<button type="submit" class="btn btn-primary"  onclick="send()">Enviar foto</button>
+							
+							
+							
 						</div>  
 					</div>               
 				</div> 
+			</div>	 
 				
 				      	           
 				<hr size="30">
+				<br>
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section_title_container ">
 							
-							<div class="section_title text-center">crea tu diseño</div>
+							<div class="text-center"><h1 class="titles">Crea tu diseño</h1></div>
 						</div>
 					</div>
 				</div>		
+				<br><br>
 				<!-- Crea tu diseño -->
 				<div class="container">
 					<div class="row">
@@ -251,22 +231,23 @@
 						</div>
 
 						<!-- Caja de texto -->
-						<div id="designs_div" class="col-lg-7 text-center"  style="display:inline-block">
+						<div id="designs_div" class="col-lg-4 text-center"  style="display:inline-block">
 							<div class="product_content">
-								<div class="product_name">
-									<p>
-										¿Eres un apasionado del diseño? ¿Deseas dar a conocer tus diseños?
+								<div class="product_name text-center">
+									<p class="text-center">
+										¿Eres un apasionado del diseño? ¿Deseas dar a conocer tus diseños en las camisas de Monos? ¡Muestra tus creaciones! Monos está buscando diseños creativos para sus camisas. ¡Esta puede ser tu oportunidad!
 								  	</p>
-								  	<p>
-								  		Llena tus datos personales y ponte en contacto con nosotros, tus diseños podrían hacer parte de Monos.
+								  	<p class="text-center">
+								  		Solamente debes llenar el siguiente formulario con tus datos personales y subir tus diseños para camisas. Después de guardar los datos y subir las imágenes, da click en "Enviar todo". ¡Tus diseños podrían llegar a ser comprados por Monos!
 								  	</p>
 								</div>
 								<div class="product_price">Aplica</div>
+								<br>
 
 								<!-- Product Size -->
 								<div class="product_size_container">
 									
-									<a  onclick="hacerclick2()" ><button type="button" class="button cart-button" >Click aquí</button></a>
+									<a  onclick="hacerclick2()" ><button type="button" class="btn btn-primary" >Click aquí</button></a>
 								</div>
 							</div>
 						</div>
@@ -292,16 +273,24 @@
 							    <input type="email" class="form-control" name="email" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Correo electrónico">
 							    <small id="emailHelp" class="form-text text-muted"></small>
 							  </div>
-							  <div class="form-group">
-							    <label for="exampleInputPhoto2">Foto</label>
-							    <input type="file" class="form-control" id="exampleInputPhoto2" placeholder="Fotos" multiple>
+							  <button id="form2_submit"type="submit" class="btn btn-primary">Guardar datos</button>
+							  <br>
+							  <br>
+							  <button type="submit" class="btn btn-primary"  onclick="send2()" data-toggle="collapse" data-target="#collapseFotos2">Agregar fotos</button>
+							  <br><br>
+							  <div class="form-group collapse" id="collapseFotos2">
+							    <label for="exampleInputPhoto2">Fotos</label>
+							    <input type="file" class="form-control" id="InputPhoto2" placeholder="Fotos" multiple>
+							    <button id="sendAll" type="submit" class="btn btn-primary" onclick="reload()"> Enviar todo</button>
 							  </div>
-							  <div class="form-check">
+							 <!-- <div class="form-check">
 							    <input type="checkbox" class="form-check-input" id="exampleCheck2">
 							    <label class="form-check-label" for="exampleCheck2">Acepto los términos</label>
 							  </div>
-							  <button id="form2_submit"type="submit" class="btn btn-primary" onclick="modelsPic()">Enviar</button>
+							  -->
 							</form>
+							
+							
 						</div>  
 					</div>               
 				</div>
@@ -356,23 +345,22 @@
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<div class="footer_logo"><a href="#">Wish</a></div>
+					<div class="footer_logo"><a href="#">Empire of Innovation</a></div>
 					<nav class="footer_nav">
 						<ul>
-							<li><a href="index.html">home</a></li>
-							<li><a href="categories.html">clothes</a></li>
-							<li><a href="categories.html">accessories</a></li>
-							<li><a href="categories.html">lingerie</a></li>
-							<li><a href="contact.html">contact</a></li>
+							<li><a href="index.html">inicio</a></li>
+							<li><a href="monos.html">monos</a></li>
+							<li><a href="tutrabajo.html">tu trabajo</a></li>
+							
+							<li><a href="contact.html">contacto</a></li>
 						</ul>
 					</nav>
 					<div class="footer_social">
 						<ul>
-							<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							
+							<li><a href="https://www.instagram.com/empireofinnovation/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							
+							
 						</ul>
 					</div>
 					<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
