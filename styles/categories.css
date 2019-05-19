@@ -23,6 +23,9 @@
 
 
 ******************************/
+.center {
+	margin:auto;
+}
 .feature-left {
     margin-bottom: 40px;
 }
