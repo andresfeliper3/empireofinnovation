@@ -27,6 +27,10 @@
 /***********
 1. Fonts
 ***********/
+#logo {
+	height:65px;
+	width:auto;
+}
 label {
 	font-weight: bold;
 }

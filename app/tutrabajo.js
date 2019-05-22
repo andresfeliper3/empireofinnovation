@@ -37,7 +37,9 @@ formulario1.addEventListener('submit',(e) => {
 	e.preventDefault();
 	var docRef = db.collection("monos_modelos").add({
     nombre: formulario1.name.value,
-    email: formulario1.email.value
+    email: formulario1.email.value,
+    numero:formulario1.number.value,
+    cedula:formulario1.cedula.value
 	})
   .then(function(docRef) {
     key = docRef.id
@@ -96,7 +98,9 @@ formulario1.addEventListener('submit',(e) => {
 	e.preventDefault();
 	var docRef = db.collection("monos_diseños").add({
     nombre: formulario2.name.value,
-    email: formulario2.email.value
+    email: formulario2.email.value,
+    numero:formulario2.number.value,
+    cedula: formulario2.cedula.value
 	})
   .then(function(docRef) {
     key2 = docRef.id

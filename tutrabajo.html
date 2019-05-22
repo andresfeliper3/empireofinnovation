@@ -22,7 +22,7 @@
 
 	<header class="header">
 		<div class="header_inner d-flex flex-row align-items-center justify-content-start">
-			<div class="logo"><a href="#">Wish</a></div>
+			<div class="logo"><a href="index.html"><img id="logo"src="img/logo.jpg"/></a></div>
 			<nav class="main_nav">
 				<ul>
 					<li><a href="index.html">inicio</a></li>
@@ -39,20 +39,15 @@
 
 	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
 		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
-		<div class="logo menu_mm"><a href="#">Wish</a></div>
-		<div class="search">
-			<form action="#">
-				<input type="search" class="search_input menu_mm" required="required">
-				<button type="submit" id="search_button_menu" class="search_button menu_mm"><img class="menu_mm" src="images/magnifying-glass.svg" alt=""></button>
-			</form>
-		</div>
+		<div class="logo menu_mm"><a href="tutrabajo"><img id="logo"src="img/logo.jpg"/></a></div>
+		
 		<nav class="menu_nav">
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="index.html">home</a></li>
+				<li class="menu_mm"><a href="index.html">inicio</a></li>
 				<li class="menu_mm"><a href="monos.html">monos</a></li>
-				<li class="menu_mm"><a href="tutrabajo.html">busca tu trabajo</a></li>
+				<li class="menu_mm"><a href="tutrabajo.html">tu trabajo</a></li>
 				<li class="menu_mm"><a href="#"></a></li>
-				<li class="menu_mm"><a href="contact.html">contact</a></li>
+				<li class="menu_mm"><a href="contact.html">contacto</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -185,8 +180,19 @@
 							    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
 							    <small id="emailHelp" class="form-text text-muted"></small>
 							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputCell1">Número celular</label>
+							    <input type="text" class="form-control" name="number" id="exampleInputCell1" aria-describedby="emailHelp" placeholder="Número">
+							    <small id="emailHelp" class="form-text text-muted"></small>
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputCedula1">Cédula</label>
+							    <input type="text" class="form-control" name="cedula" id="exampleInputCedula1" aria-describedby="emailHelp" placeholder="Documento de identificación">
+							    <small id="emailHelp" class="form-text text-muted"></small>
+							  </div>
 							  <button id="form1_submit"type="submit" class="btn btn-primary"  >Guardar datos</button>
 							  <br><br>
+							  </form>
 							 <!-- 
 							  <div class="form-check">
 							    <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -199,7 +205,7 @@
 							    <input type="file" class="form-control" id="InputPhoto" placeholder="Fotos" multiple>
 							    <button id="sendAll" type="submit" class="btn btn-primary" onclick="reload()"> Enviar todo</button>
 							  </div>
-							</form>
+							
 							
 							
 							
@@ -274,9 +280,20 @@
 							    <input type="email" class="form-control" name="email" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Correo electrónico">
 							    <small id="emailHelp" class="form-text text-muted"></small>
 							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputCell2">Número celular</label>
+							    <input type="text" class="form-control" name="number" id="exampleInputCell2" aria-describedby="emailHelp" placeholder="Número">
+							    <small id="emailHelp" class="form-text text-muted"></small>
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputCedula2">Cédula</label>
+							    <input type="text" class="form-control" name="cedula" id="exampleInputCedula2" aria-describedby="emailHelp" placeholder="Documento de identificación">
+							    <small id="emailHelp" class="form-text text-muted"></small>
+							  </div>
 							  <button id="form2_submit"type="submit" class="btn btn-primary">Guardar datos</button>
 							  <br>
 							  <br>
+							  </form>
 							  <button type="submit" class="btn btn-primary"  onclick="send2()" data-toggle="collapse" data-target="#collapseFotos2">Agregar fotos</button>
 							  <br><br>
 							  <div class="form-group collapse" id="collapseFotos2">
@@ -289,7 +306,7 @@
 							    <label class="form-check-label" for="exampleCheck2">Acepto los términos</label>
 							  </div>
 							  -->
-							</form>
+							
 							
 							
 						</div>  
